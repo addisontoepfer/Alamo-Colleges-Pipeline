@@ -22,7 +22,7 @@ for i in range(num_students):
     status = random.choices(statuses, weights=[0.6, 0.4])[0] # 60% full-time
     grade = random.choices(grades, weights=grade_weights)[0]
     
-    # Let's intentionally dirty the data for MATH-1414 to give us something to fix in SQL
+    #Dirtying Data
     if course == 'MATH-1414' and random.random() < 0.05:
         course = 'math-1414 ' # lowercase and trailing space
         
